@@ -174,8 +174,8 @@ class BitgetWsClient:
             return
         listenner = None
         if "data" in json_obj:
-            if not self.__check_sum(json_obj):
-                return
+            # if not self.__check_sum(json_obj):
+            #     return
 
             listenner = self.get_listener(json_obj)
 
