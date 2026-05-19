@@ -271,10 +271,10 @@ public class BitgetWsHandle implements BitgetWsClient {
                     listener = getListener(jsonObject);
 
                     //check sum
-                    boolean checkSumFlag = checkSum(jsonObject);
-                    if (!checkSumFlag) {
-                        return;
-                    }
+//                    boolean checkSumFlag = checkSum(jsonObject);
+//                    if (!checkSumFlag) {
+//                        return;
+//                    }
 
                     if (Objects.nonNull(listener)) {
                         listener.onReceive(message);
